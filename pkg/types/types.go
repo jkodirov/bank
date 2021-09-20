@@ -14,6 +14,14 @@ type PAN string
 
 type Category string
 
+type Status string
+
+const (
+	StatusOk Status = "OK"
+	StatusFail Status = "FAIL"
+	StatusInProgress Status = "INPROGRESS"
+)
+
 type Card struct {
 	ID int
 	PAN PAN
